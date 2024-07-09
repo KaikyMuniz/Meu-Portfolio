@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #080611;
+    overflow: hidden;
+    min-width: 100vw;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    font-family: "Poppins-Medium";
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+header h1 {
+    letter-spacing: 1px;
+    font-family: "Poppins-Regular";
+    margin: 10px 0;
+}
+
+header .container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-around;
+    min-width: 50vw;
+    transition: max-height 0.5s ease-in-out;
+    max-height: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #e9e9e9;
+    font-size: 1.5em;
+    transition: 800ms ease-in-out;
+    letter-spacing: 0.5px;
+}
+
+.nav-links a:hover {
+    color: rgb(95, 95, 95);
+    letter-spacing: 1.5px;
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    margin: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #e9e9e9;
+}
+
+.menu-title {
+    display: none;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+    header .container-header {
+        justify-content: left;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        justify-content: center;
+        place-items: center;
+        min-width: 100vw;
+        max-height: 0;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-links.active {
+        max-height: 300px;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+        text-align: center;
+        place-items: center;
+        min-width: 100vw;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .nav-links a {
+        font-size: 1.2em;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .site-title {
+        display: none;
+    }
+
+    .menu-title {
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .nav-links a {
+        font-size: 1em;
+    }
+}

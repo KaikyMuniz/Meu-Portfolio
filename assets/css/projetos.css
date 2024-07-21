@@ -1,0 +1,163 @@
+body{
+    background-color: #000;
+    animation: fadeIn 5s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        background-color: #05040a;
+    }
+}
+
+#particles-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    animation: fade 5s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes fade {
+    to {
+        opacity: 0.5;
+    }
+}
+
+.titulo {
+    text-align: center;
+    color: #cecece;
+    font-family: "Poppins-SemiBold";
+    letter-spacing: 2px;
+    font-size: 3em;
+}
+
+.container_principal{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    justify-content: space-around;
+}
+
+.card{
+    background-color: #ffffff;
+    color: black;
+    font-family: "Poppins";
+    text-align: left;
+    min-width: 200px;
+    max-width: 350px;
+    min-height: 590px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: 900ms ease-in-out;
+}
+
+.card:hover{
+    transform: translateY(-7px)
+}
+
+.card .picture{
+    max-width: 100%;
+    height: min-content;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+span{
+    display: flex;
+    margin-top: 15px;
+}
+
+.card .categoria{
+    font-family: "Poppins-Medium";
+    font-size: 0.7rem;
+    color: #000;
+    background-color: transparent;
+    border: solid;
+    border-width: 2px;
+    text-align: center;
+    border-color: #000;
+    border-radius: 15px;
+    margin-left: 10px;
+    transition: 400ms ease-in;
+    cursor: pointer;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.categoria:hover{
+    color: #FFF;
+    border-radius: 20px;
+    border-color: transparent;
+}
+
+.categoria_php:hover {
+    background-color: #617cbe;
+}
+
+.categoria_js:hover {
+    background-color: #f1c026;
+}
+
+.categoria_mysql:hover {
+    background-color: #ffa518;
+}
+
+.categoria label{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.card .data{
+    font-size: 0.8rem;
+    margin-left: 15px;
+    font-family: "Poppins-SemiBold";
+    margin-bottom: -10px;
+    margin-top: 10px;
+}
+
+.card h1{
+    max-width: max-content;
+    margin-left: 10px;
+    word-break: break-word;
+}
+
+.card p{
+    margin-left: 15px;
+    font-size: 1.3rem;
+    max-width: 95%;
+    font-family: "Poppins-Regular";
+}
+
+.center{
+    margin-top: 40px;
+    place-items: center;
+    display: flex;
+}
+
+.card a{
+    margin-left: 15px;
+    margin-bottom: 2px;
+    font-size: 1.4rem;
+    text-decoration: none;
+    font-family: "Poppins-Medium";
+    color: #4632C9;
+}
+
+.card .documentacao{
+    margin-left: 15px;
+    margin-bottom: 2px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-family: "Poppins-Medium";
+    color: #0d0716;
+}

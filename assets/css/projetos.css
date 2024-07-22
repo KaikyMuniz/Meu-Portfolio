@@ -17,7 +17,7 @@ body{
     left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: -1;
+    z-index: 0;
     animation: fade 5s ease-out forwards;
     opacity: 0;
 }
@@ -52,12 +52,13 @@ body{
     text-align: left;
     min-width: 200px;
     max-width: 350px;
-    min-height: 590px;
+    min-height: 600px;
     border-radius: 5px;
     margin-bottom: 40px;
     margin-left: 10px;
     margin-right: 10px;
     transition: 900ms ease-in-out;
+    z-index: 1;
 }
 
 .card:hover{
@@ -112,6 +113,10 @@ span{
     background-color: #ffa518;
 }
 
+.categoria_css:hover {
+    background-color: #2dabdd;
+}
+
 .categoria label{
     margin-left: 5px;
     margin-right: 5px;
@@ -129,12 +134,13 @@ span{
     max-width: max-content;
     margin-left: 10px;
     word-break: break-word;
+    font-family: "Poppins-SemiBold";
 }
 
 .card p{
     margin-left: 15px;
     font-size: 1.3rem;
-    max-width: 95%;
+    max-width: 90%;
     font-family: "Poppins-Regular";
 }
 

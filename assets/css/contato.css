@@ -32,6 +32,169 @@ body{
     }
 }
 
+.titulo {
+    text-align: center;
+    color: #cecece;
+    font-family: "Poppins-SemiBold";
+    letter-spacing: 2px;
+    font-size: 3em;
+    z-index: 1;
+}
+
+.container_principal{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    justify-content: space-around;
+}
+
+.card{
+    font-family: "Poppins";
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    max-width: 300px;
+    min-height: 300px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    justify-content: center;
+    place-items: center;
+    transition: 900ms ease-in-out;
+    z-index: 1;
+    opacity: 0.5;
+    color: #f1f1f1;
+}
+
+.discord_card{
+    background-image: linear-gradient(100deg, #5865f2, #5865f29d);
+}
+
+.whatsapp_card{
+    background-image: linear-gradient(100deg, #46c656, #46c657a9);
+}
+
+.instagram_card{
+    background-image: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.linkedin_card{
+    background-image: linear-gradient(100deg, #007ab3, #007ab3ea);
+}
+
+.email_card{
+    background-image: linear-gradient(100deg, #131313, #131313d2);
+}
+
+.telegram_card{
+    background-image: linear-gradient(100deg, #2fa6da, #2fa7dabe);
+}
+
+.card:hover{
+    opacity: 1;
+}
+
+.card .centralizar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card .picture{
+    height: min-content;
+}
+
+.card .discord_picture{
+    max-width: 50%;
+}
+
+.card .whatsapp_picture, .instagram_picture, .linkedin_picture, .email_picture, 
+.telegram_picture{
+    max-width: 35%;
+}
+
+.linkedin_picture{
+    filter: grayscale(100%) brightness(200%);
+}
+
+.email_picture, .telegram_picture{
+    filter: invert(1);
+}
+
+.card h1{
+    word-break: break-word;
+    font-family: "Poppins-SemiBold";
+}
+
+.card .acessar{
+    margin-bottom: 2px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-family: "Poppins-Medium";
+    padding: 5px;
+    border: 2px solid #f1f1f1;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    transition: 700ms ease-in-out;
+}
+
+.card .acessar:hover{
+    color: #f1f1f1;
+
+}
+
+.card .discord_acesso{
+    color: #5865f2;
+}
+
+.card .discord_acesso:hover{
+    background-color: #5865f2;
+}
+
+.card .whatsapp_acesso{
+    color: #46c656;
+}
+
+.card .whatsapp_acesso:hover{
+    background-color: #46c656;
+}
+
+.card .instagram_acesso{
+    color: #dc2743;
+}
+
+.card .instagram_acesso:hover{
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.card .linkedin_acesso{
+    color: #007ab3;
+}
+
+.card .linkedin_acesso:hover{
+    background-color: #007ab3;
+}
+
+.card .email_acesso{
+    color: #131313;
+}
+
+.card .email_acesso:hover{
+    background-color: #131313;
+}
+
+.card .telegram_acesso{
+    color: #2fa6da;
+}
+
+.card .telegram_acesso:hover{
+    background-color: #2fa6da;
+}
+
 ::-webkit-scrollbar {
     width: 12px;
 }
@@ -48,4 +211,10 @@ body{
         
 ::-webkit-scrollbar-thumb:hover {
     background: #808080;        
+}
+
+@media (max-width: 1024px) {  
+    .card{
+        opacity: 1;
+    }
 }

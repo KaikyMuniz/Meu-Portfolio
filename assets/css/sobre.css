@@ -1,0 +1,82 @@
+body {
+    background-color: #080611;
+}
+
+section{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    place-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 0 0 0;
+    z-index: 2;
+    pointer-events: none;
+    flex: 1;
+}
+
+section h1{
+    letter-spacing: 0.5px;
+    font-family: "Poppins-SemiBold";
+}
+
+section .foto {
+    max-width: 30%;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 5px;
+    border: 25px solid #160e3a59;
+}
+
+span{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+span .icone {
+    max-height: 50px;
+    margin: 10px;
+    opacity: 0.3;
+    transition: 700ms ease-in-out;
+    cursor: pointer;
+}
+
+span .icone:hover{
+    opacity: 1;
+}
+
+.sobre-content{
+    max-width: 50%;
+    color: #e9e9e9;
+    margin-left: 20px;
+    pointer-events: auto;
+}
+
+.sobre-mim-content{
+    font-family: "Poppins-Medium";
+}
+
+.skill{
+    letter-spacing: 2px;
+    color: #6240f8ef;
+}
+
+@media (max-width: 1024px) {  
+    section {
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .sobre-content {
+        min-width: 90vw;
+        text-align: center;
+        margin-left: 0;
+    }
+}

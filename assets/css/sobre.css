@@ -147,7 +147,11 @@ span .icone:hover{
         text-align: center;
         margin-left: 0;
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 3c70fabf7194fbb27b35ac58250209b9d18f0f53
     .container-card{
         justify-content: center;
         min-width: 100%;
@@ -168,4 +172,8 @@ span .icone:hover{
         width: 70vw;
         padding: 10px;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 3c70fabf7194fbb27b35ac58250209b9d18f0f53

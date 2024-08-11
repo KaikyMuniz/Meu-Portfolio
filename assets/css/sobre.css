@@ -1,5 +1,35 @@
 body {
+    margin: 0;
+    padding: 0;
     background-color: #080611;
+    animation: fadeIn 5s ease-out forwards;
+    opacity: 0;
+    scrollbar-width: thin;
+    scrollbar-color: #5f5f5f #f1f1f1;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+        
+::-webkit-scrollbar-thumb {
+    background: #5f5f5f;        
+    border-radius: 5px;        
+}
+        
+::-webkit-scrollbar-thumb:hover {
+    background: #808080;        
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
 }
 
 section{
@@ -67,6 +97,39 @@ span .icone:hover{
     color: #6240f8ef;
 }
 
+.container-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+.card{
+    margin-top: 40px;
+    background-color: #160e3a59;
+    padding: 20px;
+    border-radius: 10px 0 10px 0;
+    font-family: "Poppins-Medium";
+    color: #f1f1f1;
+}
+
+.card_educacao{
+    width: 30vw;
+}
+
+.card_habilidade{
+    width: 30vw;
+}
+
+.card_experiencia{
+    width: 50vw;
+}
+
+.card ul{
+    font-size: 1.3em;
+    letter-spacing: 1px;
+}
+
 @media (max-width: 1024px) {  
     section {
         position: relative;
@@ -78,5 +141,26 @@ span .icone:hover{
         min-width: 90vw;
         text-align: center;
         margin-left: 0;
+    }
+
+    .container-card{
+        justify-content: center;
+        min-width: 100%;
+    }
+
+    .card_educacao{
+        width: 70vw;
+        min-width: 20vw;
+        padding: 10px;
+    }
+    
+    .card_habilidade{
+        width: 70vw;
+        padding: 10px;
+    }
+    
+    .card_experiencia{
+        width: 70vw;
+        padding: 10px;
     }
 }

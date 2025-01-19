@@ -106,6 +106,10 @@ span{
     border-color: transparent;
 }
 
+.categoria_html:hover {
+    background-color: #e54c21;
+}
+
 .categoria_php:hover {
     background-color: #617cbe;
 }
@@ -120,6 +124,10 @@ span{
 
 .categoria_css:hover {
     background-color: #2dabdd;
+}
+
+.categoria_wordpress:hover {
+    background-color: #21759b;
 }
 
 .categoria label{

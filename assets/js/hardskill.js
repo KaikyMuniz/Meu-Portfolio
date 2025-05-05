@@ -1,3 +1,4 @@
+// Gerar efeito de deixar os icones transparentes, e ao passar com o mouse, deixar o icone em questão em destaque
 const skillText = document.getElementById("skill");
 const buttons = [
     { id: "html", text: " HTML" },
